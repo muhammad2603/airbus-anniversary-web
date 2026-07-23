@@ -12,10 +12,12 @@
     --color-primary-rgb: 14 165 233;
     --color-primary-foreground: #dde6f0;
     --color-secondary: #060c18;
-    --color-section: rgba(11, 20, 35, 0.8);
+    --color-section: rgb(11, 20, 35);
     --color-gray-smooth: rgb(128, 153, 176);
+    --color-cyan-thin: rgb(42, 74, 96);
     --color-cyan-smooth: rgb(90, 144, 168);
     --color-cyan-light: rgb(106, 140, 165);
+    --color-cyan-dark: #5a7090;
     --color-border: #0ea5e91f;
     --color-dark-accent: rgb(6, 12, 24);
     --text-xsmall: 0.5rem;
