@@ -207,4 +207,16 @@
             </div>
         </div>
     </section>
+    <section class="best relative h-72 md:h-96 overflow-hidden">
+        <img src="{{ asset('images/skies-from-a320-window.avif') }}"
+            alt="View from the wing of an aircraft cruising at altitude"
+            class="w-full h-full object-cover saturate-50 brightness-55">
+        <div class="image-overlay absolute inset-0 overlay-vinyet-fx"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center">
+                <p class="font-barlow-condensed font-extrabold text-primary-foreground text-[clamp(1.5rem,5vw,3.5rem)] text-shadow-sm tracking-1 uppercase">"The Most Ordered Commercial Aircraft In History"</p>
+                <p class="mt-4 font-jetbrains-mono font-semibold text-primary text-sm text-shadow-sm tracking-2">— AIRBUS GROUP, 2024</p>
+            </div>
+        </div>
+    </section>
 @endsection
