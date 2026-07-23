@@ -7,7 +7,35 @@
     --font-barlow-condensed: 'Barlow Condensed', sans-serif;
     --font-jetbrains-mono: 'JetBrains Mono', monospace;
     --font-inter: 'Inter', sans-serif;
-    --color-primary: rgb(14, 165, 233);
+    --color-background: #060c18;
+    --color-primary: #0ea5e9;
+    --color-primary-rgb: 14 165 233;
+    --color-primary-foreground: #dde6f0;
+    --color-secondary: #060c18;
+    --color-section: rgba(11, 20, 35, 0.8);
     --color-gray-smooth: rgb(128, 153, 176);
+    --color-cyan-smooth: rgb(90, 144, 168);
+    --color-cyan-light: rgb(106, 140, 165);
     --color-border: #0ea5e91f;
+    --color-dark-accent: rgb(6, 12, 24);
+    --text-xsmall: 0.5rem;
+    --text-small: 0.7rem;
+    --tracking-1: 0.1em;
+    --tracking-15: 0.15em;
+    --tracking-2: 0.2em;
+    --tracking-gap: 0.06em;
+    --leading-space: 0.92;
+}
+
+@utility bg-airbus-gradient {
+    background:
+        linear-gradient(to top, var(--color-dark-accent) 30%, transparent 70%),
+        linear-gradient(to right, var(--color-dark-accent) 0%, transparent 60%);
+}
+
+@utility bg-grid {
+    background-image:
+        linear-gradient(rgb(var(--color-primary-rgb) / 3%) 1px, transparent 1px),
+        linear-gradient(90deg, rgb(var(--color-primary-rgb) / 3%) 1px, transparent 1px);
+    background-size: 80px 80px;
 }
