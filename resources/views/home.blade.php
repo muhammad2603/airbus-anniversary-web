@@ -61,17 +61,19 @@
             </svg>
         </div>
     </section>
-    <section class="statistic-performs bg-section border-y border-border">
+    <section class="statistic-performs bg-section/80 border-y border-border">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-2 md:grid-cols-5 divide-x divide-border">
                 <div class="aircraft-ordered-count px-6 py-8 flex flex-col gap-1">
                     <span class="font-jetbrains-mono text-small text-primary tracking-15">ORD-7500</span>
-                    <span class="font-barlow-condensed font-bold text-4xl text-primary-foreground leading-none">7,500+</span>
+                    <span
+                        class="font-barlow-condensed font-bold text-4xl text-primary-foreground leading-none">7,500+</span>
                     <span class="text-cyan-light text-sm tracking-wider">Aircraft Ordered</span>
                 </div>
                 <div class="aircraft-delivered-count px-6 py-8 flex flex-col gap-1">
                     <span class="font-jetbrains-mono text-small text-primary tracking-15">DEL-5100</span>
-                    <span class="font-barlow-condensed font-bold text-4xl text-primary-foreground leading-none">5,100+</span>
+                    <span
+                        class="font-barlow-condensed font-bold text-4xl text-primary-foreground leading-none">5,100+</span>
                     <span class="text-cyan-light text-sm tracking-wider">Delivered</span>
                 </div>
                 <div class="aircraft-operation-count px-6 py-8 flex flex-col gap-1">
@@ -86,8 +88,121 @@
                 </div>
                 <div class="aircraft-max-range px-6 py-8 flex flex-col gap-1">
                     <span class="font-jetbrains-mono text-small text-primary tracking-15">RNG-6300</span>
-                    <span class="font-barlow-condensed font-bold text-4xl text-primary-foreground leading-none">6,300km</span>
+                    <span
+                        class="font-barlow-condensed font-bold text-4xl text-primary-foreground leading-none">6,300km</span>
                     <span class="text-cyan-light text-sm tracking-wider">Max Range</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="innovations py-28 md:py-36">
+        <div class="max-w-7xl mx-auto px-6">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="horizontal-rule h-px w-8 bg-primary"></div>
+                    <span class="font-jetbrains-mono text-primary text-small tracking-2">ENGINEERING PILLARS</span>
+                </div>
+                <h2
+                    class="mb-16 max-w-150 font-barlow-condensed font-bold text-primary-foreground text-[clamp(2.5rem,6vw,4.5rem)] leading-none">
+                    Three Breakthroughs That Changed Single-Aisle Aviation</h2>
+            </div>
+            <div class="innovation-list grid md:grid-cols-3 gap-px bg-border shadow-xs shadow-primary/15">
+                <div class="innovation bg-background">
+                    <div class="p-8 h-full bg-section/40 flex flex-col gap-6 group transition-all duration-300">
+                        <div class="top flex items-start justify-between">
+                            <div
+                                class="logo-innovation w-12 h-12 bg-primary/8 flex items-center justify-center border border-solid border-primary/25 rounded-xs">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-wind-icon lucide-wind">
+                                    <path d="M12.8 19.6A2 2 0 1 0 14 16H2" />
+                                    <path d="M17.5 8a2.5 2.5 0 1 1 2 4H2" />
+                                    <path d="M9.8 4.4A2 2 0 1 1 11 8H2" />
+                                </svg>
+                            </div>
+                            <span class="font-jetbrains-mono text-cyan-thin text-small tracking-15">SYS-01</span>
+                        </div>
+                        <div class="innovation-title">
+                            <div class="mb-2">
+                                <span
+                                    class="px-2 py-0.5 bg-primary/10 font-jetbrains-mono text-primary text-xs tracking-[0.08em] rounded-xs">Propulsion</span>
+                            </div>
+                            <h3
+                                class="mt-2 font-barlow-condensed font-semibold text-primary-foreground text-2xl leading-[1.2]">
+                                CFM LEAP & PW1100G Engines</h3>
+                        </div>
+                        <p class="h-full font-light text-cyan-dark">The A320neo family introduced a choice between two
+                            next-generation powerplants — the CFM International LEAP-1A and the Pratt & Whitney PW1100G-JM.
+                            Both deliver class-leading thrust efficiency and dramatically reduced noise footprints over
+                            predecessor variants.</p>
+                        <div class="horizontal-rule h-px w-8 bg-primary transition-all duration-500 group-hover:w-16"></div>
+                    </div>
+                </div>
+                <div class="innovation bg-background">
+                    <div class="p-8 h-full bg-section/40 flex flex-col gap-6 group transition-all duration-300">
+                        <div class="top flex items-start justify-between">
+                            <div
+                                class="logo-innovation w-12 h-12 bg-primary/8 flex items-center justify-center border border-solid border-primary/25 rounded-xs">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-plane-icon lucide-plane">
+                                    <path
+                                        d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
+                                </svg>
+                            </div>
+                            <span class="font-jetbrains-mono text-cyan-thin text-small tracking-15">SYS-02</span>
+                        </div>
+                        <div class="innovation-title">
+                            <div class="mb-2">
+                                <span
+                                    class="px-2 py-0.5 bg-primary/10 font-jetbrains-mono text-primary text-xs tracking-[0.08em] rounded-xs">Aerodynamics</span>
+                            </div>
+                            <h3
+                                class="mt-2 font-barlow-condensed font-semibold text-primary-foreground text-2xl leading-[1.2]">
+                                Wingtip Sharklets</h3>
+                        </div>
+                        <p class="h-full font-light text-cyan-dark">Blended Winglet Sharklets — up to 2.4 metres tall —
+                            reduce
+                            induced drag by optimising spanwise lift distribution. Each set of Sharklets contributes
+                            approximately 3.5% additional fuel burn reduction on top of new engine gains.</p>
+                        <div class="horizontal-rule h-px w-8 bg-primary transition-all duration-500 group-hover:w-16">
+                        </div>
+                    </div>
+                </div>
+                <div class="innovation bg-background">
+                    <div class="p-8 h-full bg-section/40 flex flex-col gap-6 group transition-all duration-300">
+                        <div class="top flex items-start justify-between">
+                            <div
+                                class="logo-innovation w-12 h-12 bg-primary/8 flex items-center justify-center border border-solid border-primary/25 rounded-xs">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-users-icon lucide-users">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                    <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                    <circle cx="9" cy="7" r="4" />
+                                </svg>
+                            </div>
+                            <span class="font-jetbrains-mono text-cyan-thin text-small tracking-15">SYS-03</span>
+                        </div>
+                        <div class="innovation-title">
+                            <div class="mb-2">
+                                <span
+                                    class="px-2 py-0.5 bg-primary/10 font-jetbrains-mono text-primary text-xs tracking-[0.08em] rounded-xs">Passenger
+                                    Experience</span>
+                            </div>
+                            <h3
+                                class="mt-2 font-barlow-condensed font-semibold text-primary-foreground text-2xl leading-[1.2]">
+                                Airspace Cabin</h3>
+                        </div>
+                        <p class="h-full font-light text-cyan-dark">The Airspace cabin architecture introduces wider
+                            pivoting overhead bins, broader aisles and optimised seat track spacing, cutting turnaround
+                            times while raising perceived spaciousness — without increasing fuselage diameter.</p>
+                        <div class="horizontal-rule h-px w-8 bg-primary transition-all duration-500 group-hover:w-16">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
