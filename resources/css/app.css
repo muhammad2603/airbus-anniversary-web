@@ -41,3 +41,13 @@
         linear-gradient(90deg, rgb(var(--color-primary-rgb) / 3%) 1px, transparent 1px);
     background-size: 80px 80px;
 }
+
+@utility overlay-vinyet-fx {
+    background: linear-gradient(
+        to right,
+        var(--color-dark-accent) 0%,
+        transparent 40%,
+        transparent 60%,
+        var(--color-dark-accent) 100%
+    );
+}
