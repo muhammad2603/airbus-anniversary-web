@@ -61,4 +61,35 @@
             </svg>
         </div>
     </section>
+    <section class="statistic-performs bg-section border-y border-border">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-5 divide-x divide-border">
+                <div class="aircraft-ordered-count px-6 py-8 flex flex-col gap-1">
+                    <span class="font-jetbrains-mono text-small text-primary tracking-15">ORD-7500</span>
+                    <span class="font-barlow-condensed font-bold text-4xl text-primary-foreground leading-none">7,500+</span>
+                    <span class="text-cyan-light text-sm tracking-wider">Aircraft Ordered</span>
+                </div>
+                <div class="aircraft-delivered-count px-6 py-8 flex flex-col gap-1">
+                    <span class="font-jetbrains-mono text-small text-primary tracking-15">DEL-5100</span>
+                    <span class="font-barlow-condensed font-bold text-4xl text-primary-foreground leading-none">5,100+</span>
+                    <span class="text-cyan-light text-sm tracking-wider">Delivered</span>
+                </div>
+                <div class="aircraft-operation-count px-6 py-8 flex flex-col gap-1">
+                    <span class="font-jetbrains-mono text-small text-primary tracking-15">OPR-0130</span>
+                    <span class="font-barlow-condensed font-bold text-4xl text-primary-foreground leading-none">130+</span>
+                    <span class="text-cyan-light text-sm tracking-wider">Airlines</span>
+                </div>
+                <div class="aircraft-efficiency px-6 py-8 flex flex-col gap-1">
+                    <span class="font-jetbrains-mono text-small text-primary tracking-15">EFF-20PCT</span>
+                    <span class="font-barlow-condensed font-bold text-4xl text-primary-foreground leading-none">20%</span>
+                    <span class="text-cyan-light text-sm tracking-wider">Fuel Savings</span>
+                </div>
+                <div class="aircraft-max-range px-6 py-8 flex flex-col gap-1">
+                    <span class="font-jetbrains-mono text-small text-primary tracking-15">RNG-6300</span>
+                    <span class="font-barlow-condensed font-bold text-4xl text-primary-foreground leading-none">6,300km</span>
+                    <span class="text-cyan-light text-sm tracking-wider">Max Range</span>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
