@@ -214,8 +214,192 @@
         <div class="image-overlay absolute inset-0 overlay-vinyet-fx"></div>
         <div class="absolute inset-0 flex items-center justify-center">
             <div class="text-center">
-                <p class="font-barlow-condensed font-extrabold text-primary-foreground text-[clamp(1.5rem,5vw,3.5rem)] text-shadow-sm tracking-1 uppercase">"The Most Ordered Commercial Aircraft In History"</p>
-                <p class="mt-4 font-jetbrains-mono font-semibold text-primary text-sm text-shadow-sm tracking-2">— AIRBUS GROUP, 2024</p>
+                <p
+                    class="font-barlow-condensed font-extrabold text-primary-foreground text-[clamp(1.5rem,5vw,3.5rem)] text-shadow-sm tracking-1 uppercase">
+                    "The Most Ordered Commercial Aircraft In History"</p>
+                <p class="mt-4 font-jetbrains-mono font-semibold text-primary text-sm text-shadow-sm tracking-2">— AIRBUS
+                    GROUP, 2024</p>
+            </div>
+        </div>
+    </section>
+    <section id="specs" class="specifications py-28 md:py-36">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="specs-legend">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="horizontal-rule h-px w-8 bg-primary"></div>
+                    <span class="font-jetbrains-mono text-small text-primary tracking-2">TECHNICAL DATA</span>
+                </div>
+                <h2
+                    class="mb-16 font-barlow-condensed font-bold text-primary-foreground text-[clamp(2.5rem,6vw,4.5rem)] leading-none">
+                    A320neo Specifications</h2>
+            </div>
+            <div class="specs-overview grid md:grid-cols-2 gap-x-16">
+                <div
+                    class="passenger-seats flex justify-between items-center py-4 border-b border-solid border-primary/10">
+                    <span class="text-cyan-dark text-sm font-light">Passengers (typical)</span>
+                    <div class="flex items-baseline gap-1.5">
+                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">165 /
+                            194</span>
+                        <span class="font-jetbrains-mono text-small text-primary">seats</span>
+                    </div>
+                </div>
+                <div
+                    class="max-takeoff-weight flex justify-between items-center py-4 border-b border-solid border-primary/10">
+                    <span class="text-cyan-dark text-sm font-light">Max Takeoff Weight</span>
+                    <div class="flex items-baseline gap-1.5">
+                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">79,000</span>
+                        <span class="font-jetbrains-mono text-small text-primary">kg</span>
+                    </div>
+                </div>
+                <div class="cruise-speed flex justify-between items-center py-4 border-b border-solid border-primary/10">
+                    <span class="text-cyan-dark text-sm font-light">Cruise Speed</span>
+                    <div class="flex items-baseline gap-1.5">
+                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">Mach
+                            0.78</span>
+                    </div>
+                </div>
+                <div
+                    class="service-ceiling flex justify-between items-center py-4 border-b border-solid border-primary/10">
+                    <span class="text-cyan-dark text-sm font-light">Service Ceiling</span>
+                    <div class="flex items-baseline gap-1.5">
+                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">39,800</span>
+                        <span class="font-jetbrains-mono text-small text-primary">ft</span>
+                    </div>
+                </div>
+                <div class="max-range flex justify-between items-center py-4 border-b border-solid border-primary/10">
+                    <span class="text-cyan-dark text-sm font-light">Max Range</span>
+                    <div class="flex items-baseline gap-1.5">
+                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">6,300</span>
+                        <span class="font-jetbrains-mono text-small text-primary">km</span>
+                    </div>
+                </div>
+                <div class="fuel-capacity flex justify-between items-center py-4 border-b border-solid border-primary/10">
+                    <span class="text-cyan-dark text-sm font-light">Fuel Capacity</span>
+                    <div class="flex items-baseline gap-1.5">
+                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">26,730</span>
+                        <span class="font-jetbrains-mono text-small text-primary">litres</span>
+                    </div>
+                </div>
+                <div class="engine-thrust flex justify-between items-center py-4 border-b border-solid border-primary/10">
+                    <span class="text-cyan-dark text-sm font-light">Engine Thrust</span>
+                    <div class="flex items-baseline gap-1.5">
+                        <span
+                            class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">22,000-27,000</span>
+                        <span class="font-jetbrains-mono text-small text-primary">lbf</span>
+                    </div>
+                </div>
+                <div class="wingspan flex justify-between items-center py-4 border-b border-solid border-primary/10">
+                    <span class="text-cyan-dark text-sm font-light">Wingspan</span>
+                    <div class="flex items-baseline gap-1.5">
+                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">35.8</span>
+                        <span class="font-jetbrains-mono text-small text-primary">m (w/ Sharklets)</span>
+                    </div>
+                </div>
+                <div class="length flex justify-between items-center py-4 border-b border-solid border-primary/10">
+                    <span class="text-cyan-dark text-sm font-light">Length</span>
+                    <div class="flex items-baseline gap-1.5">
+                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">37.57</span>
+                        <span class="font-jetbrains-mono text-small text-primary">m</span>
+                    </div>
+                </div>
+                <div
+                    class="fuselage-diameter flex justify-between items-center py-4 border-b border-solid border-primary/10">
+                    <span class="text-cyan-dark text-sm font-light">Fuselage Diameter</span>
+                    <div class="flex items-baseline gap-1.5">
+                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">3.95</span>
+                        <span class="font-jetbrains-mono text-small text-primary">m</span>
+                    </div>
+                </div>
+                <div class="height flex justify-between items-center py-4 border-b border-solid border-primary/10">
+                    <span class="text-cyan-dark text-sm font-light">Height</span>
+                    <div class="flex items-baseline gap-1.5">
+                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">11.76</span>
+                        <span class="font-jetbrains-mono text-small text-primary">m</span>
+                    </div>
+                </div>
+                <div class="mtow flex justify-between items-center py-4 border-b border-solid border-primary/10">
+                    <span class="text-cyan-dark text-sm font-light">MTOW Increase vs CEO</span>
+                    <div class="flex items-baseline gap-1.5">
+                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">+14%</span>
+                        <span class="font-jetbrains-mono text-small text-primary">uplift</span>
+                    </div>
+                </div>
+            </div>
+            <div class="engines-information">
+                <div class="mt-16 grid md:grid-cols-2 gap-4">
+                    <div class="p-6 bg-section/60 border border-solid border-primary/15 rounded-xs">
+                        <div class="engine-label flex items-center gap-3 mb-4">
+                            <div
+                                class="icon-label w-8 h-8 bg-primary/8 flex items-center justify-center border border-solid border-primary/30 rounded-xs">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-fuel-icon lucide-fuel">
+                                    <path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 4 0v-6.998a2 2 0 0 0-.59-1.42L18 5" />
+                                    <path d="M14 21V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v16" />
+                                    <path d="M2 21h13" />
+                                    <path d="M3 9h11" />
+                                </svg>
+                            </div>
+                            <div class="engine-name">
+                                <p class="font-barlow-condensed font-semibold text-[1.1rem] text-primary-foreground">CFM
+                                    LEAP-1A</p>
+                                <p class="font-jetbrains-mono text-cyan-dark text-small tracking-1">CFM International</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 mt-2">
+                            <div class="first-eng-thrust">
+                                <p class="font-jetbrains-mono text-cyan-dark text-small">Thrust</p>
+                                <p class="font-jetbrains-mono font-medium text-cyan-lighter text-[0.78rem]">22,000-32,900
+                                    lbf</p>
+                            </div>
+                            <div class="first-eng-bypass-ratio">
+                                <p class="font-jetbrains-mono text-cyan-dark text-small">Bypass Ratio</p>
+                                <p class="font-jetbrains-mono font-medium text-cyan-lighter text-[0.78rem]">11:1</p>
+                            </div>
+                            <div class="first-eng-dry-weight">
+                                <p class="font-jetbrains-mono text-cyan-dark text-small">Dry Weight</p>
+                                <p class="font-jetbrains-mono font-medium text-cyan-lighter text-[0.78rem]">3,006 kg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-section/60 border border-solid border-primary/15 rounded-xs">
+                        <div class="engine-label flex items-center gap-3 mb-4">
+                            <div
+                                class="icon-label w-8 h-8 bg-primary/8 flex items-center justify-center border border-solid border-primary/30 rounded-xs">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-fuel-icon lucide-fuel">
+                                    <path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 4 0v-6.998a2 2 0 0 0-.59-1.42L18 5" />
+                                    <path d="M14 21V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v16" />
+                                    <path d="M2 21h13" />
+                                    <path d="M3 9h11" />
+                                </svg>
+                            </div>
+                            <div class="engine-name">
+                                <p class="font-barlow-condensed font-semibold text-[1.1rem] text-primary-foreground">
+                                    PW1100G-JM</p>
+                                <p class="font-jetbrains-mono text-cyan-dark text-small tracking-1">Pratt & Whitney</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 mt-2">
+                            <div class="second-eng-thrust">
+                                <p class="font-jetbrains-mono text-cyan-dark text-small">Thrust</p>
+                                <p class="font-jetbrains-mono font-medium text-cyan-lighter text-[0.78rem]">22,000-33,000
+                                    lbf</p>
+                            </div>
+                            <div class="second-eng-bypass-ratio">
+                                <p class="font-jetbrains-mono text-cyan-dark text-small">Bypass Ratio</p>
+                                <p class="font-jetbrains-mono font-medium text-cyan-lighter text-[0.78rem]">12:1</p>
+                            </div>
+                            <div class="second-eng-dry-weight">
+                                <p class="font-jetbrains-mono text-cyan-dark text-small">Dry Weight</p>
+                                <p class="font-jetbrains-mono font-medium text-cyan-lighter text-[0.78rem]">2,858 kg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
