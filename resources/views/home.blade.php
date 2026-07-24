@@ -468,11 +468,121 @@
                 <div class="about-history flex-1 min-h-48">
                     <div class="block">
                         <div class="p-8 md:p-12 bg-section/50 border border-solid border-primary/15 rounded-xs">
-                            <span class="block mb-4 font-barlow-condensed font-extrabold text-primary/10 text-6.5xl leading-[0.9]">2010</span>
-                            <h3 class="mb-4 font-barlow-condensed font-semibold text-primary-foreground text-[clamp(1.4rem,3vw,2rem)] leading-[1.2]">A320neo programme launched at Farnborough Airshow</h3>
-                            <p class="font-jetbrains-mono text-primary text-sm tracking-1">Launch customer: International Airlines Group</p>
+                            <span
+                                class="block mb-4 font-barlow-condensed font-extrabold text-primary/10 text-6.5xl leading-[0.9]">2010</span>
+                            <h3
+                                class="mb-4 font-barlow-condensed font-semibold text-primary-foreground text-[clamp(1.4rem,3vw,2rem)] leading-[1.2]">
+                                A320neo programme launched at Farnborough Airshow</h3>
+                            <p class="font-jetbrains-mono text-primary text-sm tracking-1">Launch customer: International
+                                Airlines Group</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="operators py-28 md:py-36">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="operator-legend">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="horizontal-rule h-px w-8 bg-primary"></div>
+                    <span class="font-jetbrains-mono text-small text-primary tracking-2">GLOBAL OPERATORS</span>
+                </div>
+                <div class="flex items-end justify-between mb-16 flex-wrap gap-6">
+                    <h2
+                        class="font-barlow-condensed font-bold text-primary-foreground text-[clamp(2.5rem,6vw,4.5rem)] leading-none">
+                        130+ Airlines Trust the neo</h2>
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                            fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-globe-icon lucide-globe">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                            <path d="M2 12h20" />
+                        </svg>
+                        <span class="font-jetbrains-mono text-cyan-dark text-small">6 CONTINENTS · EVERY MAJOR
+                            MARKET</span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                <div class="operator">
+                    <div class="box relative aspect-4/3 bg-section overflow-hidden group cursor-pointer rounded-xs">
+                        <img src="{{ asset('images/indigo-commercial-in-flight.avif') }}" alt="IndiGo aircraft in flight"
+                            class="w-full h-full object-cover saturate-40 brightness-50 transition-transform duration-700 group-hover:scale-105">
+                        <div class="box-overlay absolute inset-0 transition-opacity duration-300 box-overlay-fx"></div>
+                        <div class="operator-about absolute bottom-0 left-0 right-0 p-4">
+                            <p class="font-barlow-condensed font-bold text-primary-foreground text-[1.3rem] leading-none">
+                                IndiGo</p>
+                            <div class="country-with-order-count flex items-center justify-between mt-1">
+                                <span class="font-jetbrains-mono text-cyan-dark text-[0.6rem] tracking-1">India</span>
+                                <span class="font-jetbrains-mono text-primary text-[0.6rem]">310+ neo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="operator">
+                    <div class="box relative aspect-4/3 bg-section overflow-hidden group cursor-pointer rounded-xs">
+                        <img src="{{ asset('images/ryanair-commercial-in-flight.avif') }}"
+                            alt="Ryanair aircraft in flight"
+                            class="w-full h-full object-cover saturate-40 brightness-50 transition-transform duration-700 group-hover:scale-105">
+                        <div class="box-overlay absolute inset-0 transition-opacity duration-300 box-overlay-fx"></div>
+                        <div class="operator-about absolute bottom-0 left-0 right-0 p-4">
+                            <p class="font-barlow-condensed font-bold text-primary-foreground text-[1.3rem] leading-none">
+                                Ryanair</p>
+                            <div class="country-with-order-count flex items-center justify-between mt-1">
+                                <span class="font-jetbrains-mono text-cyan-dark text-[0.6rem] tracking-1">Ireland</span>
+                                <span class="font-jetbrains-mono text-primary text-[0.6rem]">210+ neo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="operator">
+                    <div class="box relative aspect-4/3 bg-section overflow-hidden group cursor-pointer rounded-xs">
+                        <img src="{{ asset('images/wizzair-commercial-in-flight.avif') }}"
+                            alt="Wizz Air aircraft in flight"
+                            class="w-full h-full object-cover saturate-40 brightness-50 transition-transform duration-700 group-hover:scale-105">
+                        <div class="box-overlay absolute inset-0 transition-opacity duration-300 box-overlay-fx"></div>
+                        <div class="operator-about absolute bottom-0 left-0 right-0 p-4">
+                            <p class="font-barlow-condensed font-bold text-primary-foreground text-[1.3rem] leading-none">
+                                Wizz Air</p>
+                            <div class="country-with-order-count flex items-center justify-between mt-1">
+                                <span class="font-jetbrains-mono text-cyan-dark text-[0.6rem] tracking-1">Hungary</span>
+                                <span class="font-jetbrains-mono text-primary text-[0.6rem]">180+ neo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="operator">
+                    <div class="box relative aspect-4/3 bg-section overflow-hidden group cursor-pointer rounded-xs">
+                        <img src="{{ asset('images/easyjet-commercial-in-flight.avif') }}"
+                            alt="EasyJet aircraft in flight"
+                            class="w-full h-full object-cover saturate-40 brightness-50 transition-transform duration-700 group-hover:scale-105">
+                        <div class="box-overlay absolute inset-0 transition-opacity duration-300 box-overlay-fx"></div>
+                        <div class="operator-about absolute bottom-0 left-0 right-0 p-4">
+                            <p class="font-barlow-condensed font-bold text-primary-foreground text-[1.3rem] leading-none">
+                                EasyJet</p>
+                            <div class="country-with-order-count flex items-center justify-between mt-1">
+                                <span class="font-jetbrains-mono text-cyan-dark text-[0.6rem] tracking-1">United
+                                    Kingdom</span>
+                                <span class="font-jetbrains-mono text-primary text-[0.6rem]">150+ neo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="all-operators-link">
+                <div class="mt-8 text-center">
+                    <a href="#"
+                        class="inline-flex items-center gap-2 px-6 py-3 bg-transparent border border-solid border-primary/25 font-jetbrains-mono text-primary text-small tracking-1 rounded-xs transition-all hover:gap-3">
+                        <span class="uppercase">View All Operators</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right">
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
