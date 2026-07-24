@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="text-[16px] scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -38,14 +38,14 @@
                         </svg>
                     </div>
                     <span
-                        class="text-foreground uppercase tracking-widest font-barlow-condensed font-bold text-[1.1rem]">AIRBUS</span>
+                        class="text-primary-foreground uppercase tracking-widest font-barlow-condensed font-bold text-foreground text-[1.1rem]">AIRBUS</span>
                     <span class="w-px h-4 bg-border mx-1"></span>
-                    <span
-                        class="uppercase tracking-widest font-jetbrains-mono text-[0.7rem] text-primary">A320NEO</span>
+                    <span class="uppercase tracking-widest font-jetbrains-mono text-small text-primary">A320NEO</span>
                 </div>
                 <div class="hidden md:flex items-center gap-1">
                     <button type="button"
-                        class="px-4 py-1.5 text-sm transition-colors font-inter font-medium tracking-wider cursor-pointer outline-none border-b-2 border-solid border-primary text-primary active" tabindex="-1">Overview</button>
+                        class="px-4 py-1.5 text-sm transition-colors font-inter font-medium tracking-wider cursor-pointer outline-none border-b-2 border-solid border-primary text-primary active"
+                        tabindex="-1">Overview</button>
                     <button type="button"
                         class="px-4 py-1.5 text-sm transition-colors font-inter font-normal tracking-wider cursor-pointer outline-none border-b-2 border-solid border-transparent text-gray-smooth hover:text-primary focus:text-primary">Innovation</button>
                     <button type="button"
@@ -57,10 +57,11 @@
                 </div>
                 <button
                     class="hidden md:flex items-center gap-2 px-4 py-2 text-xs uppercase tracking-widest transition-all font-jetbrains-mono font-medium text-primary bg-primary/10 border border-solid border-primary/30 rounded-xs cursor-pointer group focus:outline-primary">
-                    <span>Explore Feet</span>
+                    <span>Explore Fleet</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right transition-transform duration-150 ease-in group-hover:translate-x-0.5 group-focus:translate-x-0.5">
+                        stroke-linejoin="round"
+                        class="lucide lucide-chevron-right-icon lucide-chevron-right transition-transform duration-150 ease-in group-hover:translate-x-0.5 group-focus:translate-x-0.5">
                         <path d="m9 18 6-6-6-6" />
                     </svg>
                 </button>
