@@ -15,8 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string("label", 100)->unique("label_idx");
             $table->string("value", 50);
-            $table->string("type", 50)->nullable();
-            $table->timestamps();
+            $table->unsignedInteger("type")->nullable();
         });
     }
 
