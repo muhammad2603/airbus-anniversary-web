@@ -72,3 +72,57 @@
             transparent 60%
         );
 }
+
+@utility header-nav-button {
+    @apply px-4 py-1.5 text-sm transition-colors font-inter tracking-wider cursor-pointer outline-none border-b-2 border-solid;
+
+    &.active {
+        @apply border-primary text-primary;
+    }
+
+    &:not(.active) {
+        @apply border-transparent text-gray-smooth hover:text-primary focus:text-primary;
+    }
+}
+
+@utility section-identity {
+    @apply flex items-center gap-3 mb-4;
+}
+
+@utility section-title {
+    @apply font-barlow-condensed font-bold text-primary-foreground text-[clamp(2.5rem,6vw,4.5rem)] leading-none;
+}
+
+@utility section-content {
+    @apply max-w-7xl mx-auto px-6;
+}
+
+@utility horizontal-rule {
+    width: var(--rule-width, 2rem);
+
+    @apply h-px bg-primary;
+
+    &.rule-with-hover-group {
+        @apply transition-all duration-500 group-hover:w-16;
+    }
+}
+
+@utility button-year-history {
+    @apply shrink-0 px-4 py-3 text-left font-barlow-condensed font-bold text-2xl leading-none border-l-2 border-solid rounded-r-xs transition duration-150 ease-in;
+
+    & > span {
+        @apply block;
+    }
+
+    &.active {
+        @apply text-primary bg-primary/12 border-primary;
+    }
+
+    &:not(.active) {
+        @apply bg-transparent text-cyan-thin cursor-pointer border-transparent hover:bg-primary/12 hover:border-primary;
+    }
+
+    &:not(.active) > span {
+        @apply transition-colors duration-300 ease-out group-hover:text-primary;
+    }
+}
