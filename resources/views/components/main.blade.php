@@ -68,6 +68,78 @@
             </div>
         </nav>
         <main>@yield('content')</main>
+        <footer class="bg-dark-blue border-t border-border">
+            <div class="max-w-7xl mx-auto px-6 py-12">
+                <div class="footer-contents flex flex-col md:flex-row justify-between items-start gap-10">
+                    <div class="footer-abouts">
+                        <div class="flex items-center gap-3 mb-4">
+                            <svg viewbox="0 0 32 32" fill="none" class="w-6 h-6">
+                                <path d="M4 20L16 6L28 20H20L16 26L12 20H4Z" fill="#0EA5E9" opacity="0.9"></path>
+                            </svg>
+                            <h2 class="font-barlow-condensed font-bold text-primary-foreground text-base tracking-1">
+                                AIRBUS
+                                · A320neo ANNIVERSARY</h2>
+                        </div>
+                        <p class="text-xs leading-relaxed max-w-xs text-cyan-dark font-light">Commemorating ten years of
+                            next-generation
+                            single-aisle aviation. All specifications are indicative and subject to configuration.
+                        </p>
+                    </div>
+                    <div class="footer-about-aircraft grid grid-cols-2 md:grid-cols-3 gap-x-16 gap-y-2">
+                        <div class="aircraft-families">
+                            <h3
+                                class="mb-3 uppercase font-jetbrains-mono font-semibold text-primary text-small tracking-15">
+                                A320NEO Family</h3>
+                            <p class="mb-1.5 text-cyan-dark text-xs tracking-1 transition-colors hover:text-foreground">
+                                A319neo</p>
+                            <p class="mb-1.5 text-cyan-dark text-xs tracking-1 transition-colors hover:text-foreground">
+                                A320neo</p>
+                            <p class="mb-1.5 text-cyan-dark text-xs tracking-1 transition-colors hover:text-foreground">
+                                A321neo</p>
+                            <p class="mb-1.5 text-cyan-dark text-xs tracking-1 transition-colors hover:text-foreground">
+                                A321XLR</p>
+                        </div>
+                        <div class="resources-data">
+                            <h3
+                                class="mb-3 uppercase font-jetbrains-mono font-semibold text-primary text-small tracking-15">
+                                Resources</h3>
+                            <nav class="flex flex-col gap-1.5">
+                                <a href="https://aircraft.airbus.com/en/aircraft/a320-family/a320neo" target="_blank"
+                                    class="text-cyan-dark text-xs tracking-1 transition-colors cursor-pointer hover:text-primary">Technical
+                                    Data</a>
+                                <a href="https://airbus.com/en/newsroom/press-releases" target="_blank"
+                                    class="text-cyan-dark text-xs tracking-1 transition-colors cursor-pointer hover:text-primary">Press
+                                    Kit</a>
+                                <a href="https://airbus.com" target="_blank"
+                                    class="text-cyan-dark text-xs tracking-1 transition-colors cursor-pointer hover:text-primary">Airbus.com</a>
+                            </nav>
+                        </div>
+                        <div class="programmes-section">
+                            <h3
+                                class="mb-3 uppercase font-jetbrains-mono font-semibold text-primary text-small tracking-15">
+                                Programme</h3>
+                            {{-- // __COMMENT__ navigasi dibawah ini adalah CTA yang akan mengarahkan ke section terkait, gunakan JavaScript. --}}
+                            <nav class="flex flex-col gap-1.5">
+                                <a id="toHistories"
+                                    class="text-cyan-dark text-xs tracking-1 transition-colors cursor-pointer hover:text-primary">History</a>
+                                <a id="toOperators"
+                                    class="text-cyan-dark text-xs tracking-1 transition-colors cursor-pointer hover:text-primary">Operators</a>
+                                <a id="toPerforms"
+                                    class="text-cyan-dark text-xs tracking-1 transition-colors cursor-pointer hover:text-primary">Orders
+                                    & Deliveries</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="footer-credits mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 border-t border-primary/10">
+                    <p class="font-jetbrains-mono text-cyan-light/55 text-small tracking-1">© 2024 AIRBUS SAS · ALL
+                        RIGHTS RESERVED · TOULOUSE, FRANCE</p>
+                    <p class="font-jetbrains-mono text-cyan-light/55 text-small tracking-1">A320neo ANNIVERSARY ·
+                        2014-2026</p>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 
