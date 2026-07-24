@@ -46,7 +46,7 @@
     background-size: 80px 80px;
 }
 
-@utility overlay-vinyet-fx {
+@utility overlay-lr-vinyet-fx {
     background: linear-gradient(
         to right,
         var(--color-dark-accent) 0%,
@@ -54,6 +54,11 @@
         transparent 60%,
         var(--color-dark-accent) 100%
     );
+}
+
+@utility overlay-tb-vinyet-fx {
+    background:
+        linear-gradient(to top, var(--color-dark-accent) 0%, transparent 50%, var(--color-dark-accent) 100%);
 }
 
 @utility box-overlay-fx {
