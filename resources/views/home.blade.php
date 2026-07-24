@@ -403,4 +403,78 @@
             </div>
         </div>
     </section>
+    <section class="timeline py-28 md:py-36 bg-section-smooth-dark/70 border-t border-border">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="timeline-legend">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="h-px w-8 bg-primary"></div>
+                    <span class="font-jetbrains-mono text-primary text-small tracking-2">PROGRAMME HISTORY</span>
+                </div>
+                <h2
+                    class="mb-16 font-barlow-condensed font-bold text-primary-foreground text-[clamp(2.5rem,6vw,4.5rem)] leading-none">
+                    A Decade Of Milestones</h2>
+            </div>
+            <div class="aircraft-histories flex flex-col md:flex-row gap-8">
+                <div class="years md:w-64 flex md:flex-col gap-1 overflow-x-auto md:overflow-visible">
+                    <button type="button"
+                        class="year group shrink-0 px-4 py-3 text-left border-l-2 border-solid transition duration-150 ease-in active bg-primary/12 border-primary rounded-r-xs"
+                        tabindex="-1">
+                        <span
+                            class="block font-barlow-condensed font-bold text-primary text-2xl leading-none transition-colors duration-300 ease-out">2010</span>
+                    </button>
+                    <button type="button"
+                        class="year group shrink-0 px-4 py-3 text-left border-l-2 border-solid transition duration-150 ease-in rounded-r-xs bg-transparent cursor-pointer border-transparent hover:bg-primary/12 hover:border-primary"
+                        tabindex="-1">
+                        <span
+                            class="block font-barlow-condensed font-bold text-cyan-thin text-2xl leading-none transition-colors duration-300 ease-out group-hover:text-primary">2013</span>
+                    </button>
+                    <button type="button"
+                        class="year group shrink-0 px-4 py-3 text-left border-l-2 border-solid transition duration-150 ease-in rounded-r-xs bg-transparent cursor-pointer border-transparent hover:bg-primary/12 hover:border-primary"
+                        tabindex="-1">
+                        <span
+                            class="block font-barlow-condensed font-bold text-cyan-thin text-2xl leading-none transition-colors duration-300 ease-out group-hover:text-primary">2014</span>
+                    </button>
+                    <button type="button"
+                        class="year group shrink-0 px-4 py-3 text-left border-l-2 border-solid transition duration-150 ease-in rounded-r-xs bg-transparent cursor-pointer border-transparent hover:bg-primary/12 hover:border-primary"
+                        tabindex="-1">
+                        <span
+                            class="block font-barlow-condensed font-bold text-cyan-thin text-2xl leading-none transition-colors duration-300 ease-out group-hover:text-primary">2016</span>
+                    </button>
+                    <button type="button"
+                        class="year group shrink-0 px-4 py-3 text-left border-l-2 border-solid transition duration-150 ease-in rounded-r-xs bg-transparent cursor-pointer border-transparent hover:bg-primary/12 hover:border-primary"
+                        tabindex="-1">
+                        <span
+                            class="block font-barlow-condensed font-bold text-cyan-thin text-2xl leading-none transition-colors duration-300 ease-out group-hover:text-primary">2017</span>
+                    </button>
+                    <button type="button"
+                        class="year group shrink-0 px-4 py-3 text-left border-l-2 border-solid transition duration-150 ease-in rounded-r-xs bg-transparent cursor-pointer border-transparent hover:bg-primary/12 hover:border-primary"
+                        tabindex="-1">
+                        <span
+                            class="block font-barlow-condensed font-bold text-cyan-thin text-2xl leading-none transition-colors duration-300 ease-out group-hover:text-primary">2018</span>
+                    </button>
+                    <button type="button"
+                        class="year group shrink-0 px-4 py-3 text-left border-l-2 border-solid transition duration-150 ease-in rounded-r-xs bg-transparent cursor-pointer border-transparent hover:bg-primary/12 hover:border-primary"
+                        tabindex="-1">
+                        <span
+                            class="block font-barlow-condensed font-bold text-cyan-thin text-2xl leading-none transition-colors duration-300 ease-out group-hover:text-primary">2020</span>
+                    </button>
+                    <button type="button"
+                        class="year group shrink-0 px-4 py-3 text-left border-l-2 border-solid transition duration-150 ease-in rounded-r-xs bg-transparent cursor-pointer border-transparent hover:bg-primary/12 hover:border-primary"
+                        tabindex="-1">
+                        <span
+                            class="block font-barlow-condensed font-bold text-cyan-thin text-2xl leading-none transition-colors duration-300 ease-out group-hover:text-primary">2024</span>
+                    </button>
+                </div>
+                <div class="about-history flex-1 min-h-48">
+                    <div class="block">
+                        <div class="p-8 md:p-12 bg-section/50 border border-solid border-primary/15 rounded-xs">
+                            <span class="block mb-4 font-barlow-condensed font-extrabold text-primary/10 text-6.5xl leading-[0.9]">2010</span>
+                            <h3 class="mb-4 font-barlow-condensed font-semibold text-primary-foreground text-[clamp(1.4rem,3vw,2rem)] leading-[1.2]">A320neo programme launched at Farnborough Airshow</h3>
+                            <p class="font-jetbrains-mono text-primary text-sm tracking-1">Launch customer: International Airlines Group</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
