@@ -211,7 +211,7 @@
         <img src="{{ asset('images/skies-from-a320-window.avif') }}"
             alt="View from the wing of an aircraft cruising at altitude"
             class="w-full h-full object-cover saturate-50 brightness-55">
-        <div class="image-overlay absolute inset-0 overlay-vinyet-fx"></div>
+        <div class="image-overlay absolute inset-0 overlay-lr-vinyet-fx"></div>
         <div class="absolute inset-0 flex items-center justify-center">
             <div class="text-center">
                 <p
@@ -583,6 +583,75 @@
                             <path d="m12 5 7 7-7 7" />
                         </svg>
                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="best-efficiency-engine relative h-64 md:h-80 overflow-hidden">
+        <img src="{{ asset('images/a320-neo-engine.avif') }}" alt="Close-up detail of an aircraft turbine engine"
+            class="w-full h-full object-cover saturate-30 brightness-45 object-[center_30%]">
+        <div class="overlay-image absolute inset-0 overlay-tb-vinyet-fx"></div>
+        <div class="efficiency-engine-summary absolute inset-0 flex items-center">
+            <div class="max-w-7xl mx-auto px-6 w-full">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div
+                        class="flex items-center gap-4 p-5 bg-dark-accent/80 border border-solid border-primary/12 rounded-xs">
+                        <div
+                            class="shrink-0 w-10 h-10 flex items-center justify-center bg-primary/8 border border-solid border-primary/25">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-award-icon lucide-award">
+                                <path
+                                    d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
+                                <circle cx="12" cy="8" r="6" />
+                            </svg>
+                        </div>
+                        <div class="award">
+                            <p class="mb-0.5 font-jetbrains-mono text-cyan-dark text-[0.55rem] tracking-1">ACU-N4 · Noice
+                                Certification</p>
+                            <p class="font-barlow-condensed font-bold text-primary-foreground text-2xl leading-none">ICAO
+                                Stage 4</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex items-center gap-4 p-5 bg-dark-accent/80 border border-solid border-primary/12 rounded-xs">
+                        <div
+                            class="shrink-0 w-10 h-10 flex items-center justify-center bg-primary/8 border border-solid border-primary/25">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-fuel-icon lucide-fuel">
+                                <path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 4 0v-6.998a2 2 0 0 0-.59-1.42L18 5" />
+                                <path d="M14 21V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v16" />
+                                <path d="M2 21h13" />
+                                <path d="M3 9h11" />
+                            </svg>
+                        </div>
+                        <div class="award">
+                            <p class="mb-0.5 font-jetbrains-mono text-cyan-dark text-[0.55rem] tracking-1">ENV-NOX · NOx vs
+                                CAEP/6</p>
+                            <p class="font-barlow-condensed font-bold text-primary-foreground text-2xl leading-none">-50%
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex items-center gap-4 p-5 bg-dark-accent/80 border border-solid border-primary/12 rounded-xs">
+                        <div
+                            class="shrink-0 w-10 h-10 flex items-center justify-center bg-primary/8 border border-solid border-primary/25">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-wind-icon lucide-wind">
+                                <path d="M12.8 19.6A2 2 0 1 0 14 16H2" />
+                                <path d="M17.5 8a2.5 2.5 0 1 1 2 4H2" />
+                                <path d="M9.8 4.4A2 2 0 1 1 11 8H2" />
+                            </svg>
+                        </div>
+                        <div class="award">
+                            <p class="mb-0.5 font-jetbrains-mono text-cyan-dark text-[0.55rem] tracking-1">ACU-DB vs
+                                A320ceo</p>
+                            <p class="font-barlow-condensed font-bold text-primary-foreground text-2xl leading-none">-14 dB
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
