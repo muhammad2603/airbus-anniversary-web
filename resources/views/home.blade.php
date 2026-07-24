@@ -16,10 +16,10 @@
                 <span class="font-jetbrains-mono text-cyan-smooth text-xsmall tracking-widest">2014-2026</span>
             </div>
         </div>
-        <div class="landing-content relative z-10 max-w-7xl mx-auto px-6 pb-24 md:pb-32">
+        <div class="landing-content section-content relative z-10 pb-24 md:pb-32">
             <div class="max-w-3xl">
                 <div class="airplane-explain flex items-center gap-3 mb-6">
-                    <div class="horizontal-rule h-px w-12 bg-primary"></div>
+                    <div class="horizontal-rule [--rule-width:3rem]"></div>
                     <span class="font-jetbrains-mono text-small text-primary tracking-2">AIRBUS COMMERCIAL
                         AIRCRAFT</span>
                 </div>
@@ -62,7 +62,7 @@
         </div>
     </section>
     <section class="statistic-performs bg-section/80 border-y border-border">
-        <div class="max-w-7xl mx-auto px-6">
+        <div class="section-content">
             <div class="grid grid-cols-2 md:grid-cols-5 divide-x divide-border">
                 <div class="aircraft-ordered-count px-6 py-8 flex flex-col gap-1">
                     <span class="font-jetbrains-mono text-small text-primary tracking-15">ORD-7500</span>
@@ -95,15 +95,14 @@
             </div>
         </div>
     </section>
-    <section class="innovations py-28 md:py-36">
-        <div class="max-w-7xl mx-auto px-6">
+    <section id="innovations" class="innovations py-28 md:py-36">
+        <div class="section-content">
             <div>
-                <div class="flex items-center gap-3 mb-4">
-                    <div class="horizontal-rule h-px w-8 bg-primary"></div>
+                <div class="section-identity">
+                    <div class="horizontal-rule"></div>
                     <span class="font-jetbrains-mono text-primary text-small tracking-2">ENGINEERING PILLARS</span>
                 </div>
-                <h2
-                    class="mb-16 max-w-150 font-barlow-condensed font-bold text-primary-foreground text-[clamp(2.5rem,6vw,4.5rem)] leading-none">
+                <h2 class="max-w-150 mb-16 section-title">
                     Three Breakthroughs That Changed Single-Aisle Aviation</h2>
             </div>
             <div class="innovation-list grid md:grid-cols-3 gap-px bg-border shadow-xs shadow-primary/15">
@@ -135,7 +134,7 @@
                             next-generation powerplants — the CFM International LEAP-1A and the Pratt & Whitney PW1100G-JM.
                             Both deliver class-leading thrust efficiency and dramatically reduced noise footprints over
                             predecessor variants.</p>
-                        <div class="horizontal-rule h-px w-8 bg-primary transition-all duration-500 group-hover:w-16"></div>
+                        <div class="horizontal-rule rule-with-hover-group"></div>
                     </div>
                 </div>
                 <div class="innovation bg-background">
@@ -166,7 +165,7 @@
                             reduce
                             induced drag by optimising spanwise lift distribution. Each set of Sharklets contributes
                             approximately 3.5% additional fuel burn reduction on top of new engine gains.</p>
-                        <div class="horizontal-rule h-px w-8 bg-primary transition-all duration-500 group-hover:w-16">
+                        <div class="horizontal-rule rule-with-hover-group">
                         </div>
                     </div>
                 </div>
@@ -200,7 +199,7 @@
                         <p class="h-full font-light text-cyan-dark">The Airspace cabin architecture introduces wider
                             pivoting overhead bins, broader aisles and optimised seat track spacing, cutting turnaround
                             times while raising perceived spaciousness — without increasing fuselage diameter.</p>
-                        <div class="horizontal-rule h-px w-8 bg-primary transition-all duration-500 group-hover:w-16">
+                        <div class="horizontal-rule rule-with-hover-group">
                         </div>
                     </div>
                 </div>
@@ -223,14 +222,13 @@
         </div>
     </section>
     <section id="specs" class="specifications py-28 md:py-36">
-        <div class="max-w-7xl mx-auto px-6">
+        <div class="section-content">
             <div class="specs-legend">
-                <div class="flex items-center gap-3 mb-4">
-                    <div class="horizontal-rule h-px w-8 bg-primary"></div>
+                <div class="section-identity">
+                    <div class="horizontal-rule"></div>
                     <span class="font-jetbrains-mono text-small text-primary tracking-2">TECHNICAL DATA</span>
                 </div>
-                <h2
-                    class="mb-16 font-barlow-condensed font-bold text-primary-foreground text-[clamp(2.5rem,6vw,4.5rem)] leading-none">
+                <h2 class="mb-16 section-title">
                     A320neo Specifications</h2>
             </div>
             <div class="specs-overview grid md:grid-cols-2 gap-x-16">
@@ -404,65 +402,40 @@
         </div>
     </section>
     <section class="timeline py-28 md:py-36 bg-section-smooth-dark/70 border-t border-border">
-        <div class="max-w-7xl mx-auto px-6">
+        <div class="section-content">
             <div class="timeline-legend">
-                <div class="flex items-center gap-3 mb-4">
+                <div class="section-identity">
                     <div class="h-px w-8 bg-primary"></div>
                     <span class="font-jetbrains-mono text-primary text-small tracking-2">PROGRAMME HISTORY</span>
                 </div>
-                <h2
-                    class="mb-16 font-barlow-condensed font-bold text-primary-foreground text-[clamp(2.5rem,6vw,4.5rem)] leading-none">
+                <h2 class="mb-16 section-title">
                     A Decade Of Milestones</h2>
             </div>
             <div class="aircraft-histories flex flex-col md:flex-row gap-8">
                 <div class="years md:w-64 flex md:flex-col gap-1 overflow-x-auto md:overflow-visible">
-                    <button type="button"
-                        class="year group shrink-0 px-4 py-3 text-left border-l-2 border-solid transition duration-150 ease-in active bg-primary/12 border-primary rounded-r-xs"
-                        tabindex="-1">
-                        <span
-                            class="block font-barlow-condensed font-bold text-primary text-2xl leading-none transition-colors duration-300 ease-out">2010</span>
+                    <button type="button" class="button-year-history group active" tabindex="-1">
+                        <span>2010</span>
                     </button>
-                    <button type="button"
-                        class="year group shrink-0 px-4 py-3 text-left border-l-2 border-solid transition duration-150 ease-in rounded-r-xs bg-transparent cursor-pointer border-transparent hover:bg-primary/12 hover:border-primary"
-                        tabindex="-1">
-                        <span
-                            class="block font-barlow-condensed font-bold text-cyan-thin text-2xl leading-none transition-colors duration-300 ease-out group-hover:text-primary">2013</span>
+                    <button type="button" class="button-year-history group" tabindex="-1">
+                        <span>2013</span>
                     </button>
-                    <button type="button"
-                        class="year group shrink-0 px-4 py-3 text-left border-l-2 border-solid transition duration-150 ease-in rounded-r-xs bg-transparent cursor-pointer border-transparent hover:bg-primary/12 hover:border-primary"
-                        tabindex="-1">
-                        <span
-                            class="block font-barlow-condensed font-bold text-cyan-thin text-2xl leading-none transition-colors duration-300 ease-out group-hover:text-primary">2014</span>
+                    <button type="button" class="button-year-history group" tabindex="-1">
+                        <span>2014</span>
                     </button>
-                    <button type="button"
-                        class="year group shrink-0 px-4 py-3 text-left border-l-2 border-solid transition duration-150 ease-in rounded-r-xs bg-transparent cursor-pointer border-transparent hover:bg-primary/12 hover:border-primary"
-                        tabindex="-1">
-                        <span
-                            class="block font-barlow-condensed font-bold text-cyan-thin text-2xl leading-none transition-colors duration-300 ease-out group-hover:text-primary">2016</span>
+                    <button type="button" class="button-year-history group" tabindex="-1">
+                        <span>2016</span>
                     </button>
-                    <button type="button"
-                        class="year group shrink-0 px-4 py-3 text-left border-l-2 border-solid transition duration-150 ease-in rounded-r-xs bg-transparent cursor-pointer border-transparent hover:bg-primary/12 hover:border-primary"
-                        tabindex="-1">
-                        <span
-                            class="block font-barlow-condensed font-bold text-cyan-thin text-2xl leading-none transition-colors duration-300 ease-out group-hover:text-primary">2017</span>
+                    <button type="button" class="button-year-history group" tabindex="-1">
+                        <span>2017</span>
                     </button>
-                    <button type="button"
-                        class="year group shrink-0 px-4 py-3 text-left border-l-2 border-solid transition duration-150 ease-in rounded-r-xs bg-transparent cursor-pointer border-transparent hover:bg-primary/12 hover:border-primary"
-                        tabindex="-1">
-                        <span
-                            class="block font-barlow-condensed font-bold text-cyan-thin text-2xl leading-none transition-colors duration-300 ease-out group-hover:text-primary">2018</span>
+                    <button type="button" class="button-year-history group" tabindex="-1">
+                        <span>2018</span>
                     </button>
-                    <button type="button"
-                        class="year group shrink-0 px-4 py-3 text-left border-l-2 border-solid transition duration-150 ease-in rounded-r-xs bg-transparent cursor-pointer border-transparent hover:bg-primary/12 hover:border-primary"
-                        tabindex="-1">
-                        <span
-                            class="block font-barlow-condensed font-bold text-cyan-thin text-2xl leading-none transition-colors duration-300 ease-out group-hover:text-primary">2020</span>
+                    <button type="button" class="button-year-history group" tabindex="-1">
+                        <span>2020</span>
                     </button>
-                    <button type="button"
-                        class="year group shrink-0 px-4 py-3 text-left border-l-2 border-solid transition duration-150 ease-in rounded-r-xs bg-transparent cursor-pointer border-transparent hover:bg-primary/12 hover:border-primary"
-                        tabindex="-1">
-                        <span
-                            class="block font-barlow-condensed font-bold text-cyan-thin text-2xl leading-none transition-colors duration-300 ease-out group-hover:text-primary">2024</span>
+                    <button type="button" class="button-year-history group" tabindex="-1">
+                        <span>2024</span>
                     </button>
                 </div>
                 <div class="about-history flex-1 min-h-48">
@@ -482,15 +455,14 @@
         </div>
     </section>
     <section class="operators py-28 md:py-36">
-        <div class="max-w-7xl mx-auto px-6">
+        <div class="section-content">
             <div class="operator-legend">
-                <div class="flex items-center gap-3 mb-4">
-                    <div class="horizontal-rule h-px w-8 bg-primary"></div>
+                <div class="section-identity">
+                    <div class="horizontal-rule"></div>
                     <span class="font-jetbrains-mono text-small text-primary tracking-2">GLOBAL OPERATORS</span>
                 </div>
                 <div class="flex items-end justify-between mb-16 flex-wrap gap-6">
-                    <h2
-                        class="font-barlow-condensed font-bold text-primary-foreground text-[clamp(2.5rem,6vw,4.5rem)] leading-none">
+                    <h2 class="section-title">
                         130+ Airlines Trust the neo</h2>
                     <div class="flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
@@ -592,7 +564,7 @@
             class="w-full h-full object-cover saturate-30 brightness-45 object-[center_30%]">
         <div class="overlay-image absolute inset-0 overlay-tb-vinyet-fx"></div>
         <div class="efficiency-engine-summary absolute inset-0 flex items-center">
-            <div class="max-w-7xl mx-auto px-6 w-full">
+            <div class="section-content w-full">
                 <div class="grid md:grid-cols-3 gap-6">
                     <div
                         class="flex items-center gap-4 p-5 bg-dark-accent/80 border border-solid border-primary/12 rounded-xs">

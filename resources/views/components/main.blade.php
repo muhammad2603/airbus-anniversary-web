@@ -27,16 +27,16 @@
                 </div>
                 <div class="hidden md:flex items-center gap-1">
                     <button type="button"
-                        class="px-4 py-1.5 text-sm transition-colors font-inter font-medium tracking-wider cursor-pointer outline-none border-b-2 border-solid border-primary text-primary active"
+                        class="header-nav-button font-medium active"
                         tabindex="-1">Overview</button>
                     <button type="button"
-                        class="px-4 py-1.5 text-sm transition-colors font-inter font-normal tracking-wider cursor-pointer outline-none border-b-2 border-solid border-transparent text-gray-smooth hover:text-primary focus:text-primary">Innovation</button>
+                        class="header-nav-button font-normal">Innovation</button>
                     <button type="button"
-                        class="px-4 py-1.5 text-sm transition-colors font-inter font-normal tracking-wider cursor-pointer outline-none border-b-2 border-solid border-transparent text-gray-smooth hover:text-primary focus:text-primary">Spefications</button>
+                        class="header-nav-button font-normal">Spefications</button>
                     <button type="button"
-                        class="px-4 py-1.5 text-sm transition-colors font-inter font-normal tracking-wider cursor-pointer outline-none border-b-2 border-solid border-transparent text-gray-smooth hover:text-primary focus:text-primary">Timeline</button>
+                        class="header-nav-button font-normal">Timeline</button>
                     <button type="button"
-                        class="px-4 py-1.5 text-sm transition-colors font-inter font-normal tracking-wider cursor-pointer outline-none border-b-2 border-solid border-transparent text-gray-smooth hover:text-primary focus:text-primary">Operators</button>
+                        class="header-nav-button font-normal">Operators</button>
                 </div>
                 <button
                     class="hidden md:flex items-center gap-2 px-4 py-2 text-xs uppercase tracking-widest transition-all font-jetbrains-mono font-medium text-primary bg-primary/10 border border-solid border-primary/30 rounded-xs cursor-pointer group focus:outline-primary">
