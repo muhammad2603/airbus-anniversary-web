@@ -21,6 +21,7 @@
     --color-cyan-lighter: rgb(160, 192, 216);
     --color-cyan-dark: #5a7090;
     --color-border: #0ea5e91f;
+    --color-dark-accent-rgb: 6, 12, 24;
     --color-dark-accent: rgb(6, 12, 24);
     --text-xsmall: 0.5rem;
     --text-small: 0.7rem;
@@ -53,4 +54,13 @@
         transparent 60%,
         var(--color-dark-accent) 100%
     );
+}
+
+@utility box-overlay-fx {
+    background:
+        linear-gradient(
+            to top,
+            rgba(var(--color-dark-accent-rgb), 0.95) 0%,
+            transparent 60%
+        );
 }
