@@ -32,7 +32,7 @@
                     <button type="button"
                         class="header-nav-button font-normal">Innovation</button>
                     <button type="button"
-                        class="header-nav-button font-normal">Spefications</button>
+                        class="header-nav-button font-normal">Specifications</button>
                     <button type="button"
                         class="header-nav-button font-normal">Timeline</button>
                     <button type="button"
