@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string("label", 100);
             $table->string("thrust", 30);
-            $table->string("bypass_ration", 30);
+            $table->string("bypass_ratio", 30);
             $table->string("dry_weight", 30);
             $table->unsignedInteger("type")->nullable();
         });
