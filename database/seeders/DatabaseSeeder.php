@@ -18,6 +18,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             TypeUnitSeeder::class,
             SpecificationSeeder::class,
+            EngineSeeder::class,
+            EngineSpecSeeder::class,
         ]);
     }
 }
