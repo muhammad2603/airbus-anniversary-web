@@ -31,7 +31,8 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('specifications', function (Blueprint $table) {
-            //
+            $table->dropForeign("type_specs_type_units");
+            $table->dropColumn("type");
         });
     }
 };
