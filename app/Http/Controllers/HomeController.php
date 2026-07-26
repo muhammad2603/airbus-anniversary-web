@@ -7,6 +7,8 @@ use App\Models\EngineeringPillarsModel;
 use App\Models\SpesificationsModel;
 use Illuminate\Support\Number;
 use App\Models\EnginesModel;
+use App\Models\HistoriesModel;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -29,6 +31,8 @@ class HomeController extends Controller
                 "engineering_pillars"   => $engineering_pillars,
                 "specifications"        => $specs,
                 "engines"               => $eng_spec,
+                "histories"             => HistoriesModel::getHistories(),
+                "years_history"         => HistoriesModel::getUniqueYears(),
             ]
         );
     }
