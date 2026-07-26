@@ -21,6 +21,9 @@ class DatabaseSeeder extends Seeder
             EngineSeeder::class,
             EngineSpecSeeder::class,
             EngineeringPillarSeeder::class,
+            CountrySeeder::class,
+            AirlineSeeder::class,
+            GlobalOperatorSeeder::class,
         ]);
     }
 }
