@@ -245,78 +245,47 @@
             </div>
             <div class="engines-information">
                 <div class="mt-16 grid md:grid-cols-2 gap-4">
-                    <div class="p-6 bg-section/60 border border-solid border-primary/15 rounded-xs">
-                        <div class="engine-label flex items-center gap-3 mb-4">
-                            <div
-                                class="icon-label w-8 h-8 bg-primary/8 flex items-center justify-center border border-solid border-primary/30 rounded-xs">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                    viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-fuel-icon lucide-fuel">
-                                    <path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 4 0v-6.998a2 2 0 0 0-.59-1.42L18 5" />
-                                    <path d="M14 21V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v16" />
-                                    <path d="M2 21h13" />
-                                    <path d="M3 9h11" />
-                                </svg>
+                    @foreach ($engines as $engine)
+                        <div class="p-6 bg-section/60 border border-solid border-primary/15 rounded-xs">
+                            <div class="engine-label flex items-center gap-3 mb-4">
+                                <div
+                                    class="icon-label w-8 h-8 bg-primary/8 flex items-center justify-center border border-solid border-primary/30 rounded-xs">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                        viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-fuel-icon lucide-fuel">
+                                        <path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 4 0v-6.998a2 2 0 0 0-.59-1.42L18 5" />
+                                        <path d="M14 21V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v16" />
+                                        <path d="M2 21h13" />
+                                        <path d="M3 9h11" />
+                                    </svg>
+                                </div>
+                                <div class="engine-name">
+                                    <p class="font-barlow-condensed font-semibold text-[1.1rem] text-primary-foreground">
+                                        {{ $engine->engine_name }}</p>
+                                    <p class="font-jetbrains-mono text-cyan-dark text-small tracking-1">
+                                        {{ $engine->founder }}</p>
+                                </div>
                             </div>
-                            <div class="engine-name">
-                                <p class="font-barlow-condensed font-semibold text-[1.1rem] text-primary-foreground">CFM
-                                    LEAP-1A</p>
-                                <p class="font-jetbrains-mono text-cyan-dark text-small tracking-1">CFM International</p>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-3 gap-4 mt-2">
-                            <div class="first-eng-thrust">
-                                <p class="font-jetbrains-mono text-cyan-dark text-small">Thrust</p>
-                                <p class="font-jetbrains-mono font-medium text-cyan-lighter text-[0.78rem]">22,000-32,900
-                                    lbf</p>
-                            </div>
-                            <div class="first-eng-bypass-ratio">
-                                <p class="font-jetbrains-mono text-cyan-dark text-small">Bypass Ratio</p>
-                                <p class="font-jetbrains-mono font-medium text-cyan-lighter text-[0.78rem]">11:1</p>
-                            </div>
-                            <div class="first-eng-dry-weight">
-                                <p class="font-jetbrains-mono text-cyan-dark text-small">Dry Weight</p>
-                                <p class="font-jetbrains-mono font-medium text-cyan-lighter text-[0.78rem]">3,006 kg</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6 bg-section/60 border border-solid border-primary/15 rounded-xs">
-                        <div class="engine-label flex items-center gap-3 mb-4">
-                            <div
-                                class="icon-label w-8 h-8 bg-primary/8 flex items-center justify-center border border-solid border-primary/30 rounded-xs">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                    viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-fuel-icon lucide-fuel">
-                                    <path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 4 0v-6.998a2 2 0 0 0-.59-1.42L18 5" />
-                                    <path d="M14 21V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v16" />
-                                    <path d="M2 21h13" />
-                                    <path d="M3 9h11" />
-                                </svg>
-                            </div>
-                            <div class="engine-name">
-                                <p class="font-barlow-condensed font-semibold text-[1.1rem] text-primary-foreground">
-                                    PW1100G-JM</p>
-                                <p class="font-jetbrains-mono text-cyan-dark text-small tracking-1">Pratt & Whitney</p>
+                            <div class="grid grid-cols-3 gap-4 mt-2">
+                                <div class="first-eng-thrust">
+                                    <p class="font-jetbrains-mono text-cyan-dark text-small">Thrust</p>
+                                    <p class="font-jetbrains-mono font-medium text-cyan-lighter text-[0.78rem]">
+                                        {{ $engine->engineSpecs->thrust }}</p>
+                                </div>
+                                <div class="first-eng-bypass-ratio">
+                                    <p class="font-jetbrains-mono text-cyan-dark text-small">Bypass Ratio</p>
+                                    <p class="font-jetbrains-mono font-medium text-cyan-lighter text-[0.78rem]">
+                                        {{ $engine->engineSpecs->bypass_ratio }}</p>
+                                </div>
+                                <div class="first-eng-dry-weight">
+                                    <p class="font-jetbrains-mono text-cyan-dark text-small">Dry Weight</p>
+                                    <p class="font-jetbrains-mono font-medium text-cyan-lighter text-[0.78rem]">
+                                        {{ $engine->engineSpecs->dry_weight }}</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="grid grid-cols-3 gap-4 mt-2">
-                            <div class="second-eng-thrust">
-                                <p class="font-jetbrains-mono text-cyan-dark text-small">Thrust</p>
-                                <p class="font-jetbrains-mono font-medium text-cyan-lighter text-[0.78rem]">22,000-33,000
-                                    lbf</p>
-                            </div>
-                            <div class="second-eng-bypass-ratio">
-                                <p class="font-jetbrains-mono text-cyan-dark text-small">Bypass Ratio</p>
-                                <p class="font-jetbrains-mono font-medium text-cyan-lighter text-[0.78rem]">12:1</p>
-                            </div>
-                            <div class="second-eng-dry-weight">
-                                <p class="font-jetbrains-mono text-cyan-dark text-small">Dry Weight</p>
-                                <p class="font-jetbrains-mono font-medium text-cyan-lighter text-[0.78rem]">2,858 kg</p>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
