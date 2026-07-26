@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             SpecificationSeeder::class,
             EngineSeeder::class,
             EngineSpecSeeder::class,
+            EngineeringPillarSeeder::class,
         ]);
     }
 }
