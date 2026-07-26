@@ -26,17 +26,11 @@
                     <span class="uppercase tracking-widest font-jetbrains-mono text-small text-primary">A320NEO</span>
                 </div>
                 <div class="hidden md:flex items-center gap-1">
-                    <button type="button"
-                        class="header-nav-button font-medium active"
-                        tabindex="-1">Overview</button>
-                    <button type="button"
-                        class="header-nav-button font-normal">Innovation</button>
-                    <button type="button"
-                        class="header-nav-button font-normal">Specifications</button>
-                    <button type="button"
-                        class="header-nav-button font-normal">Timeline</button>
-                    <button type="button"
-                        class="header-nav-button font-normal">Operators</button>
+                    <button type="button" class="header-nav-button font-medium active" tabindex="-1">Overview</button>
+                    <button type="button" class="header-nav-button font-normal">Innovation</button>
+                    <button type="button" class="header-nav-button font-normal">Specifications</button>
+                    <button type="button" class="header-nav-button font-normal">Timeline</button>
+                    <button type="button" class="header-nav-button font-normal">Operators</button>
                 </div>
                 <button
                     class="hidden md:flex items-center gap-2 px-4 py-2 text-xs uppercase tracking-widest transition-all font-jetbrains-mono font-medium text-primary bg-primary/10 border border-solid border-primary/30 rounded-xs cursor-pointer group focus:outline-primary">
