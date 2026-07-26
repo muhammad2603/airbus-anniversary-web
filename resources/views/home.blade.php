@@ -231,96 +231,17 @@
                     A320neo Specifications</h2>
             </div>
             <div class="specs-overview grid md:grid-cols-2 gap-x-16">
-                <div
-                    class="passenger-seats flex justify-between items-center py-4 border-b border-solid border-primary/10">
-                    <span class="text-cyan-dark text-sm font-light">Passengers (typical)</span>
-                    <div class="flex items-baseline gap-1.5">
-                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">165 /
-                            194</span>
-                        <span class="font-jetbrains-mono text-small text-primary">seats</span>
+                @foreach ($specifications as $spec)
+                    <div
+                        class="passenger-seats flex justify-between items-center py-4 border-b border-solid border-primary/10">
+                        <span class="text-cyan-dark text-sm font-light">{{ $spec->label }}</span>
+                        <div class="flex items-baseline gap-1.5">
+                            <span
+                                class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">{{ $spec->value }}</span>
+                            <span class="font-jetbrains-mono text-small text-primary">{{ $spec->typeUnit?->type }}</span>
+                        </div>
                     </div>
-                </div>
-                <div
-                    class="max-takeoff-weight flex justify-between items-center py-4 border-b border-solid border-primary/10">
-                    <span class="text-cyan-dark text-sm font-light">Max Takeoff Weight</span>
-                    <div class="flex items-baseline gap-1.5">
-                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">79,000</span>
-                        <span class="font-jetbrains-mono text-small text-primary">kg</span>
-                    </div>
-                </div>
-                <div class="cruise-speed flex justify-between items-center py-4 border-b border-solid border-primary/10">
-                    <span class="text-cyan-dark text-sm font-light">Cruise Speed</span>
-                    <div class="flex items-baseline gap-1.5">
-                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">Mach
-                            0.78</span>
-                    </div>
-                </div>
-                <div
-                    class="service-ceiling flex justify-between items-center py-4 border-b border-solid border-primary/10">
-                    <span class="text-cyan-dark text-sm font-light">Service Ceiling</span>
-                    <div class="flex items-baseline gap-1.5">
-                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">39,800</span>
-                        <span class="font-jetbrains-mono text-small text-primary">ft</span>
-                    </div>
-                </div>
-                <div class="max-range flex justify-between items-center py-4 border-b border-solid border-primary/10">
-                    <span class="text-cyan-dark text-sm font-light">Max Range</span>
-                    <div class="flex items-baseline gap-1.5">
-                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">6,300</span>
-                        <span class="font-jetbrains-mono text-small text-primary">km</span>
-                    </div>
-                </div>
-                <div class="fuel-capacity flex justify-between items-center py-4 border-b border-solid border-primary/10">
-                    <span class="text-cyan-dark text-sm font-light">Fuel Capacity</span>
-                    <div class="flex items-baseline gap-1.5">
-                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">26,730</span>
-                        <span class="font-jetbrains-mono text-small text-primary">litres</span>
-                    </div>
-                </div>
-                <div class="engine-thrust flex justify-between items-center py-4 border-b border-solid border-primary/10">
-                    <span class="text-cyan-dark text-sm font-light">Engine Thrust</span>
-                    <div class="flex items-baseline gap-1.5">
-                        <span
-                            class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">22,000-27,000</span>
-                        <span class="font-jetbrains-mono text-small text-primary">lbf</span>
-                    </div>
-                </div>
-                <div class="wingspan flex justify-between items-center py-4 border-b border-solid border-primary/10">
-                    <span class="text-cyan-dark text-sm font-light">Wingspan</span>
-                    <div class="flex items-baseline gap-1.5">
-                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">35.8</span>
-                        <span class="font-jetbrains-mono text-small text-primary">m (w/ Sharklets)</span>
-                    </div>
-                </div>
-                <div class="length flex justify-between items-center py-4 border-b border-solid border-primary/10">
-                    <span class="text-cyan-dark text-sm font-light">Length</span>
-                    <div class="flex items-baseline gap-1.5">
-                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">37.57</span>
-                        <span class="font-jetbrains-mono text-small text-primary">m</span>
-                    </div>
-                </div>
-                <div
-                    class="fuselage-diameter flex justify-between items-center py-4 border-b border-solid border-primary/10">
-                    <span class="text-cyan-dark text-sm font-light">Fuselage Diameter</span>
-                    <div class="flex items-baseline gap-1.5">
-                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">3.95</span>
-                        <span class="font-jetbrains-mono text-small text-primary">m</span>
-                    </div>
-                </div>
-                <div class="height flex justify-between items-center py-4 border-b border-solid border-primary/10">
-                    <span class="text-cyan-dark text-sm font-light">Height</span>
-                    <div class="flex items-baseline gap-1.5">
-                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">11.76</span>
-                        <span class="font-jetbrains-mono text-small text-primary">m</span>
-                    </div>
-                </div>
-                <div class="mtow flex justify-between items-center py-4 border-b border-solid border-primary/10">
-                    <span class="text-cyan-dark text-sm font-light">MTOW Increase vs CEO</span>
-                    <div class="flex items-baseline gap-1.5">
-                        <span class="font-jetbrains-mono font-medium text-primary-foreground text-[0.95rem]">+14%</span>
-                        <span class="font-jetbrains-mono text-small text-primary">uplift</span>
-                    </div>
-                </div>
+                @endforeach
             </div>
             <div class="engines-information">
                 <div class="mt-16 grid md:grid-cols-2 gap-4">
