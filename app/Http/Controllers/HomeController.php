@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\EngineeringPillarsModel;
 use App\Models\SpesificationsModel;
 use Illuminate\Support\Number;
-use NumberFormatter;
+use App\Models\EnginesModel;
 
 class HomeController extends Controller
 {
@@ -22,11 +22,13 @@ class HomeController extends Controller
         $specs = SpesificationsModel::with('typeUnit')
             ->limit($env_specs_data_limit)
             ->get();
+        $eng_spec = EnginesModel::with("engineSpecs")->get();
         return view(
             'home',
             [
                 "engineering_pillars"   => $engineering_pillars,
                 "specifications"        => $specs,
+                "engines"               => $eng_spec,
             ]
         );
     }
