@@ -24,6 +24,8 @@ class DatabaseSeeder extends Seeder
             CountrySeeder::class,
             AirlineSeeder::class,
             GlobalOperatorSeeder::class,
+            EnvironmentalPerformanceSeeder::class,
+            HistorySeeder::class,
         ]);
     }
 }
