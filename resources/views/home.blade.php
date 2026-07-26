@@ -302,43 +302,28 @@
             </div>
             <div class="aircraft-histories flex flex-col md:flex-row gap-8">
                 <div class="years md:w-64 flex md:flex-col gap-1 overflow-x-auto md:overflow-visible">
-                    <button type="button" class="button-year-history group active" tabindex="-1">
-                        <span>2010</span>
-                    </button>
-                    <button type="button" class="button-year-history group" tabindex="-1">
-                        <span>2013</span>
-                    </button>
-                    <button type="button" class="button-year-history group" tabindex="-1">
-                        <span>2014</span>
-                    </button>
-                    <button type="button" class="button-year-history group" tabindex="-1">
-                        <span>2016</span>
-                    </button>
-                    <button type="button" class="button-year-history group" tabindex="-1">
-                        <span>2017</span>
-                    </button>
-                    <button type="button" class="button-year-history group" tabindex="-1">
-                        <span>2018</span>
-                    </button>
-                    <button type="button" class="button-year-history group" tabindex="-1">
-                        <span>2020</span>
-                    </button>
-                    <button type="button" class="button-year-history group" tabindex="-1">
-                        <span>2024</span>
-                    </button>
+                    @foreach ($years_history as $idx => $year)
+                        <button type="button" class="button-year-history group {{ $idx === 0 ? 'active' : '' }}"
+                            tabindex="-1">
+                            <span>{{ $year->year }}</span>
+                        </button>
+                    @endforeach
                 </div>
                 <div class="about-history flex-1 min-h-48">
-                    <div class="block">
-                        <div class="p-8 md:p-12 bg-section/50 border border-solid border-primary/15 rounded-xs">
-                            <span
-                                class="block mb-4 font-barlow-condensed font-extrabold text-primary/10 text-6.5xl leading-[0.9]">2010</span>
-                            <h3
-                                class="mb-4 font-barlow-condensed font-semibold text-primary-foreground text-[clamp(1.4rem,3vw,2rem)] leading-[1.2]">
-                                A320neo programme launched at Farnborough Airshow</h3>
-                            <p class="font-jetbrains-mono text-primary text-sm tracking-1">Launch customer: International
-                                Airlines Group</p>
+                    {{-- // __COMMENT__ Looping akan bermasalah jika riwayat ada yang double ditahun yang sama, perbaiki jika ada riwayat dengan tahun yang sama --}}
+                    @foreach ($histories as $idx => $history)
+                        <div class="{{ $idx === 0 ? 'block' : 'hidden' }}">
+                            <div class="p-8 md:p-12 bg-section/50 border border-solid border-primary/15 rounded-xs">
+                                <span
+                                    class="block mb-4 font-barlow-condensed font-extrabold text-primary/10 text-6.5xl leading-[0.9]">{{ $history?->year }}</span>
+                                <h3
+                                    class="mb-4 font-barlow-condensed font-semibold text-primary-foreground text-[clamp(1.4rem,3vw,2rem)] leading-[1.2]">
+                                    {{ $history->title }}</h3>
+                                <p class="font-jetbrains-mono text-primary text-sm tracking-1">{{ $history->description }}
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
