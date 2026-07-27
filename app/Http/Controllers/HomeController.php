@@ -9,6 +9,7 @@ use Illuminate\Support\Number;
 use App\Models\EnginesModel;
 use App\Models\HistoriesModel;
 use App\Models\AirlinesModel;
+use App\Models\EnvironmentalPerformancesModel;
 
 class HomeController extends Controller
 {
@@ -26,15 +27,17 @@ class HomeController extends Controller
             ->get();
         $eng_spec = EnginesModel::with("engineSpecs")->get();
         $airlines = AirlinesModel::with(["countries", "globalOperators"])->get();
+        $env_performs = EnvironmentalPerformancesModel::getAllPerforms();
         return view(
             'home',
             [
-                "engineering_pillars"   => $engineering_pillars,
-                "specifications"        => $specs,
-                "engines"               => $eng_spec,
-                "histories"             => HistoriesModel::getHistories(),
-                "years_history"         => HistoriesModel::getUniqueYears(),
-                "airlines"              => $airlines,
+                "engineering_pillars"           => $engineering_pillars,
+                "specifications"                => $specs,
+                "engines"                       => $eng_spec,
+                "histories"                     => HistoriesModel::getHistories(),
+                "years_history"                 => HistoriesModel::getUniqueYears(),
+                "airlines"                      => $airlines,
+                "environmental_performances"    => $env_performs,
             ]
         );
     }
