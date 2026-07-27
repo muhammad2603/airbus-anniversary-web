@@ -4,6 +4,9 @@
         $first_pillar = $engineering_pillars[0];
         $second_pillar = $engineering_pillars[1];
         $third_pillar = $engineering_pillars[2];
+        $first_env_performs = $environmental_performances[0];
+        $second_env_performs = $environmental_performances[1];
+        $third_env_performs = $environmental_performances[2];
     @endphp
     <section class="overview relative min-h-screen flex flex-col justify-end overflow-hidden">
         <div class="overlay absolute inset-0 bg-secondary">
@@ -418,10 +421,10 @@
                             </svg>
                         </div>
                         <div class="award">
-                            <p class="mb-0.5 font-jetbrains-mono text-cyan-dark text-[0.55rem] tracking-1">ACU-N4 · Noice
-                                Certification</p>
-                            <p class="font-barlow-condensed font-bold text-primary-foreground text-2xl leading-none">ICAO
-                                Stage 4</p>
+                            <p class="mb-0.5 font-jetbrains-mono text-cyan-dark text-[0.55rem] tracking-1">
+                                {{ $first_env_performs->code }} · {{ $first_env_performs->label }}</p>
+                            <p class="font-barlow-condensed font-bold text-primary-foreground text-2xl leading-none">
+                                {{ $first_env_performs->value }}</p>
                         </div>
                     </div>
                     <div
@@ -438,9 +441,10 @@
                             </svg>
                         </div>
                         <div class="award">
-                            <p class="mb-0.5 font-jetbrains-mono text-cyan-dark text-[0.55rem] tracking-1">ENV-NOX · NOx vs
-                                CAEP/6</p>
-                            <p class="font-barlow-condensed font-bold text-primary-foreground text-2xl leading-none">-50%
+                            <p class="mb-0.5 font-jetbrains-mono text-cyan-dark text-[0.55rem] tracking-1">
+                                {{ $second_env_performs->code }} · {{ $second_env_performs->label }}</p>
+                            <p class="font-barlow-condensed font-bold text-primary-foreground text-2xl leading-none">
+                                {{ $second_env_performs->value }}
                             </p>
                         </div>
                     </div>
@@ -457,9 +461,10 @@
                             </svg>
                         </div>
                         <div class="award">
-                            <p class="mb-0.5 font-jetbrains-mono text-cyan-dark text-[0.55rem] tracking-1">ACU-DB vs
-                                A320ceo</p>
-                            <p class="font-barlow-condensed font-bold text-primary-foreground text-2xl leading-none">-14 dB
+                            <p class="mb-0.5 font-jetbrains-mono text-cyan-dark text-[0.55rem] tracking-1">
+                                {{ $third_env_performs->code }} · {{ $third_env_performs->label }}</p>
+                            <p class="font-barlow-condensed font-bold text-primary-foreground text-2xl leading-none">
+                                {{ $third_env_performs->value }}
                             </p>
                         </div>
                     </div>
