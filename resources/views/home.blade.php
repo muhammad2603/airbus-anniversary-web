@@ -57,6 +57,12 @@
                         <span>View Specs</span>
                     </a>
                 </div>
+                <div class="creator mt-10 flex items-center gap-3">
+                    <div class="horizontal-rule [--rule-width:1.5rem] bg-primary/40"></div>
+                    <p class="font-jetbrains-mono text-cyan-dark text-small tracking-15">CREATED BY <span
+                            class="font-semibold text-primary">Muhammad
+                            Fattahillah. Mz</span></p>
+                </div>
             </div>
         </div>
         <div
