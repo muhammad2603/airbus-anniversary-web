@@ -18,7 +18,23 @@ class AirlinesModel extends Model
         );
     }
 
-    public function globalOperators()
+    public function globes(): BelongsTo
+    {
+        return $this->belongsTo(
+            GlobesModel::class,
+            "globe_id"
+        );
+    }
+
+    public function cities(): BelongsTo
+    {
+        return $this->belongsTo(
+            CitiesModel::class,
+            "city_id"
+        );
+    }
+
+    public function globalOperators(): HasOne
     {
         return $this->hasOne(
             GlobalOperatorsModel::class,
