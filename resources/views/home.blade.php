@@ -352,22 +352,36 @@
                 </div>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                <div class="operator">
-                    <div class="box relative aspect-4/3 bg-section overflow-hidden group cursor-pointer rounded-xs">
-                        <img src="{{ asset('images/indigo-commercial-in-flight.avif') }}" alt="IndiGo aircraft in flight"
-                            class="w-full h-full object-cover saturate-40 brightness-50 transition-transform duration-700 group-hover:scale-105">
-                        <div class="box-overlay absolute inset-0 transition-opacity duration-300 box-overlay-fx"></div>
-                        <div class="operator-about absolute bottom-0 left-0 right-0 p-4">
-                            <p class="font-barlow-condensed font-bold text-primary-foreground text-[1.3rem] leading-none">
-                                IndiGo</p>
-                            <div class="country-with-order-count flex items-center justify-between mt-1">
-                                <span class="font-jetbrains-mono text-cyan-dark text-[0.6rem] tracking-1">India</span>
-                                <span class="font-jetbrains-mono text-primary text-[0.6rem]">310+ neo</span>
+                @php
+                    $airlines_image = [
+                        'indigo-commercial-in-flight.avif',
+                        'ryanair-commercial-in-flight.avif',
+                        'wizzair-commercial-in-flight.avif',
+                        'easyjet-commercial-in-flight.avif',
+                    ];
+                @endphp
+                @foreach ($airlines as $idx => $airline)
+                    <div class="operator">
+                        <div class="box relative aspect-4/3 bg-section overflow-hidden group cursor-pointer rounded-xs">
+                            <img src="{{ asset('images/' . $airlines_image[$idx]) }}" alt="IndiGo aircraft in flight"
+                                class="w-full h-full object-cover saturate-40 brightness-50 transition-transform duration-700 group-hover:scale-105">
+                            <div class="box-overlay absolute inset-0 transition-opacity duration-300 box-overlay-fx"></div>
+                            <div class="operator-about absolute bottom-0 left-0 right-0 p-4">
+                                <p
+                                    class="font-barlow-condensed font-bold text-primary-foreground text-[1.3rem] leading-none">
+                                    {{ $airline->name }}</p>
+                                <div class="country-with-order-count flex items-center justify-between mt-1">
+                                    <span
+                                        class="font-jetbrains-mono text-cyan-dark text-[0.6rem] tracking-1">{{ $airline->countries?->name }}</span>
+                                    <span
+                                        class="font-jetbrains-mono text-primary text-[0.6rem]">{{ $airline->globalOperators?->orders_count }}+
+                                        neo</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="operator">
+                @endforeach
+                {{-- <div class="operator">
                     <div class="box relative aspect-4/3 bg-section overflow-hidden group cursor-pointer rounded-xs">
                         <img src="{{ asset('images/ryanair-commercial-in-flight.avif') }}"
                             alt="Ryanair aircraft in flight"
@@ -415,7 +429,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
             <div class="all-operators-link">
                 <div class="mt-8 text-center">
