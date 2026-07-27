@@ -14,10 +14,10 @@ class AirlineSeeder extends Seeder
     public function run(): void
     {
         $data = [
-            ["name" => "IndiGo", "country_id" => 1],
-            ["name" => "Ryanair", "country_id" => 2],
-            ["name" => "Wizz Air", "country_id" => 3],
-            ["name" => "EasyJet", "country_id" => 4],
+            ["name" => "IndiGo", "thumbnail" => "indigo-commercial-in-flight.avif", "country_id" => 1, "city_id" => 1, "globe_id" => 1],
+            ["name" => "Ryanair", "thumbnail" => "ryanair-commercial-in-flight.avif", "country_id" => 2, "city_id" => 7, "globe_id" => 2],
+            ["name" => "Wizz Air", "thumbnail" => "wizzair-commercial-in-flight.avif", "country_id" => 3, "city_id" => 8, "globe_id" => 2],
+            ["name" => "EasyJet", "thumbnail" => "easyjet-commercial-in-flight.avif", "country_id" => 4, "city_id" => 9, "globe_id" => 2],
         ];
         DB::table("airlines")->insert($data);
     }
