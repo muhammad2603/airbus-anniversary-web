@@ -8,7 +8,7 @@ use App\Models\SpesificationsModel;
 use Illuminate\Support\Number;
 use App\Models\EnginesModel;
 use App\Models\HistoriesModel;
-use Illuminate\Support\Facades\DB;
+use App\Models\AirlinesModel;
 
 class HomeController extends Controller
 {
@@ -25,6 +25,7 @@ class HomeController extends Controller
             ->limit($env_specs_data_limit)
             ->get();
         $eng_spec = EnginesModel::with("engineSpecs")->get();
+        $airlines = AirlinesModel::with(["countries", "globalOperators"])->get();
         return view(
             'home',
             [
@@ -33,6 +34,7 @@ class HomeController extends Controller
                 "engines"               => $eng_spec,
                 "histories"             => HistoriesModel::getHistories(),
                 "years_history"         => HistoriesModel::getUniqueYears(),
+                "airlines"              => $airlines,
             ]
         );
     }
