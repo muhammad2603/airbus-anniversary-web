@@ -1,5 +1,6 @@
 @extends('components.main')
 @section('content')
+    @vite("resources/js/home.js")
     @php
         $first_pillar = $engineering_pillars[0];
         $second_pillar = $engineering_pillars[1];
@@ -24,7 +25,7 @@
                 <span class="font-jetbrains-mono text-cyan-smooth text-xsmall tracking-widest">2014-2026</span>
             </div>
         </div>
-        <div class="landing-content section-content relative z-10 pb-24 md:pb-32">
+        <div class="landing-content section-content relative z-10 pb-24 md:pb-20">
             <div class="max-w-3xl">
                 <div class="airplane-explain flex items-center gap-3 mb-6">
                     <div class="horizontal-rule [--rule-width:3rem]"></div>
@@ -361,19 +362,12 @@
                 </div>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                @php
-                    $airlines_image = [
-                        'indigo-commercial-in-flight.avif',
-                        'ryanair-commercial-in-flight.avif',
-                        'wizzair-commercial-in-flight.avif',
-                        'easyjet-commercial-in-flight.avif',
-                    ];
-                @endphp
-                @foreach ($airlines as $idx => $airline)
+                @foreach ($airlines as $airline)
                     <div class="operator">
                         <div class="box relative aspect-4/3 bg-section overflow-hidden group cursor-pointer rounded-xs">
-                            <img src="{{ asset('images/' . $airlines_image[$idx]) }}" alt="IndiGo aircraft in flight"
-                                class="w-full h-full object-cover saturate-40 brightness-50 transition-transform duration-700 group-hover:scale-105">
+                            <img src="{{ asset('images/' . $airline->thumbnail) }}"
+                                alt="{{ $airline->name }} aircraft commercial"
+                                class="w-full h-full object-cover saturate-40 brightness-50 transition-transform duration-700 group-hover:scale-105 text-white">
                             <div class="box-overlay absolute inset-0 transition-opacity duration-300 box-overlay-fx"></div>
                             <div class="operator-about absolute bottom-0 left-0 right-0 p-4">
                                 <p
