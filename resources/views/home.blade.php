@@ -381,55 +381,6 @@
                         </div>
                     </div>
                 @endforeach
-                {{-- <div class="operator">
-                    <div class="box relative aspect-4/3 bg-section overflow-hidden group cursor-pointer rounded-xs">
-                        <img src="{{ asset('images/ryanair-commercial-in-flight.avif') }}"
-                            alt="Ryanair aircraft in flight"
-                            class="w-full h-full object-cover saturate-40 brightness-50 transition-transform duration-700 group-hover:scale-105">
-                        <div class="box-overlay absolute inset-0 transition-opacity duration-300 box-overlay-fx"></div>
-                        <div class="operator-about absolute bottom-0 left-0 right-0 p-4">
-                            <p class="font-barlow-condensed font-bold text-primary-foreground text-[1.3rem] leading-none">
-                                Ryanair</p>
-                            <div class="country-with-order-count flex items-center justify-between mt-1">
-                                <span class="font-jetbrains-mono text-cyan-dark text-[0.6rem] tracking-1">Ireland</span>
-                                <span class="font-jetbrains-mono text-primary text-[0.6rem]">210+ neo</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="operator">
-                    <div class="box relative aspect-4/3 bg-section overflow-hidden group cursor-pointer rounded-xs">
-                        <img src="{{ asset('images/wizzair-commercial-in-flight.avif') }}"
-                            alt="Wizz Air aircraft in flight"
-                            class="w-full h-full object-cover saturate-40 brightness-50 transition-transform duration-700 group-hover:scale-105">
-                        <div class="box-overlay absolute inset-0 transition-opacity duration-300 box-overlay-fx"></div>
-                        <div class="operator-about absolute bottom-0 left-0 right-0 p-4">
-                            <p class="font-barlow-condensed font-bold text-primary-foreground text-[1.3rem] leading-none">
-                                Wizz Air</p>
-                            <div class="country-with-order-count flex items-center justify-between mt-1">
-                                <span class="font-jetbrains-mono text-cyan-dark text-[0.6rem] tracking-1">Hungary</span>
-                                <span class="font-jetbrains-mono text-primary text-[0.6rem]">180+ neo</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="operator">
-                    <div class="box relative aspect-4/3 bg-section overflow-hidden group cursor-pointer rounded-xs">
-                        <img src="{{ asset('images/easyjet-commercial-in-flight.avif') }}"
-                            alt="EasyJet aircraft in flight"
-                            class="w-full h-full object-cover saturate-40 brightness-50 transition-transform duration-700 group-hover:scale-105">
-                        <div class="box-overlay absolute inset-0 transition-opacity duration-300 box-overlay-fx"></div>
-                        <div class="operator-about absolute bottom-0 left-0 right-0 p-4">
-                            <p class="font-barlow-condensed font-bold text-primary-foreground text-[1.3rem] leading-none">
-                                EasyJet</p>
-                            <div class="country-with-order-count flex items-center justify-between mt-1">
-                                <span class="font-jetbrains-mono text-cyan-dark text-[0.6rem] tracking-1">United
-                                    Kingdom</span>
-                                <span class="font-jetbrains-mono text-primary text-[0.6rem]">150+ neo</span>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
             <div class="all-operators-link">
                 <div class="mt-8 text-center">
